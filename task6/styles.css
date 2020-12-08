@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* General styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(150, 80%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+header {
+    background: hsl(90, 80%, 50%);
+    border-bottom: 2px solid hsl(180, 80%, 50%);
+    padding: .75em;
+    text-align: center;
+}
+
+main {
+    padding: 0 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+/* General classes */
+.fas {
+    margin-right: .5em;
+}
+
+/* Form section */
+.search-div {
+    margin: .5em auto;
+    max-width: 500px;
+    position: relative;
+}
+
+.search-input {
+    border: 5px double hsl(180, 80%, 50%);
+    border-radius: 1.5em;
+    margin: 0 auto;
+    outline: none;
+    padding: .5em 1em;
+    padding-left: calc(.5em + 35px);
+    width: 100%;
+}
+
+.search-icon {
+    color: hsl(180, 80%, 50%);
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-btn {
+    background: hsl(60, 100%, 40%);
+    border: none;
+    border-radius: .75em;
+    color: inherit;
+    cursor: pointer;
+    margin: 1em;
+    outline: none;
+    padding: .5em .75em;
+}
+
+/* Results section */
+.search-result {
+    border: 2px dashed hsl(0, 0%, 100%);
+    font-size: 1.25rem;
+    margin: 1em auto;
+    padding: .5em;
+    width: 90%;
+}
+
+.search-result p {
+    display: inline;
+}
+
+.animate {
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
