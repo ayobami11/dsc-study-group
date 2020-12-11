@@ -7,11 +7,12 @@ const searchResultsList = document.getElementById('results-list');
  *
  * @param {object} snippet The snippet property destructured from the searchResult object
  */
-const createResultTemplate = ({ snippet }) => {
+const createResultTemplate = ({ title, pageid, snippet }) => {
     const searchResultElement = document.createElement('li');
     searchResultElement.innerHTML = `
         <div class="search-result animate">
             <i class="fas fa-arrow-circle-right"></i>
+            <h2><a href="https://en.wikipedia.org/?curid=${pageid}" target="_blank">${title}</a></h2>
             <p>${snippet}</p>
         </div>
     `;

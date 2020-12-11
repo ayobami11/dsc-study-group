@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
 /* General styles */
 * {
@@ -6,6 +6,10 @@
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 14px;
 }
 
 body {
@@ -64,6 +68,7 @@ ul {
     border-radius: .75em;
     color: inherit;
     cursor: pointer;
+    font-weight: 600;
     margin: 1em;
     outline: none;
     padding: .5em .75em;
@@ -78,8 +83,13 @@ ul {
     width: 90%;
 }
 
-.search-result p {
-    display: inline;
+.search-result h2 {
+    display: inline-block;
+    margin-bottom: .25em;
+}
+
+.search-result a {
+    color: inherit;
 }
 
 .animate {
@@ -96,3 +106,10 @@ ul {
         opacity: 1;
     }
 }
+
+/* Media queries */
+@media (min-width: 500px) {
+    html {
+        font-size: 16px;
+    }
+} 
